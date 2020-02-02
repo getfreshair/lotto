@@ -6,6 +6,8 @@ import java.util.Map;
 
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
@@ -16,48 +18,57 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
 import com.sadang.lotto.exception.ResourceNotFoundException;
 import com.sadang.lotto.model.Employee;
+import com.sadang.lotto.model.Member;
 import com.sadang.lotto.repository.EmployeeRepository;
+import com.sadang.lotto.repository.MemberRepository;
 
+/**
+ * 
+ * @author yang/2020.01.29 - rest api 기초 crud 작성
+ *  2020.01.29 - REST API TEST SITE : https://resttesttest.com/
+ *   
+ */
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/rest")
 public class EmployeeController {
 	@Autowired(required=true)
     private EmployeeRepository employeeRepository;
+	private Logger logger = LoggerFactory.getLogger(EmployeeController.class);
 	
+	// HTTP Method: GET 
+ 	// Request URL: http://localhost:8081/rest/employees
 	@GetMapping("/employees")
-    public ModelAndView getAllEmployees(ModelAndView modelAndView) {
-        List<Employee> employees = employeeRepository.findAll();;
-        
-        Map<String, Object> response = new HashMap<String, Object>();
-        response.put("employees", employees);
-        response.put("check", "success");
-        
-        modelAndView.addObject("response", response);
-        modelAndView.setViewName("index");
-        
-        return modelAndView;
+    public List<Employee> getAllEmployees() {
+		List<Employee> response = employeeRepository.findAll();
+		logger.info("response : " + response.toString());
+        return response;
     }
 
-    @GetMapping("/getEmployeeById/{id}")
+	// HTTP Method: GET 
+	// Request URL: http://localhost:8080/rest/employees/11
+    @GetMapping("/employees/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable(value = "id") Long employeeId)
         throws ResourceNotFoundException {
         Employee employee = employeeRepository.findById(employeeId)
           .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
+        logger.info("response Body is : " + employee);
         return ResponseEntity.ok().body(employee);
     }
     
-    @PostMapping("/createEmployee")
+    // HTTP Method: POST 
+    // Request URL: http://localhost:8080/rest/employees 
+    @PostMapping("/employees")
     public Employee createEmployee(@Valid @RequestBody Employee employee) {
         return employeeRepository.save(employee);
     }
-
-    @PutMapping("/updateEmployee/{id}")
+    
+    //HTTP Method: GET 
+    //Request URL: http://localhost:8080/rest/emploees/7
+    @PutMapping("/employees/{id}")
     public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long employeeId,
          @Valid @RequestBody Employee employeeDetails) throws ResourceNotFoundException {
         Employee employee = employeeRepository.findById(employeeId)
@@ -70,19 +81,35 @@ public class EmployeeController {
         return ResponseEntity.ok(updatedEmployee);
     }
 
-    @DeleteMapping("/deleteEmployee/{id}")
-    public String deleteEmployee(@PathVariable(value = "id") Long employeeId, Model model)
+    // HTTP Method: DELETE
+    // Request URL: http://localhost:8080/rest/employees/11
+    @DeleteMapping("/employees/{id}")
+    public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long employeeId, Model model)
          throws ResourceNotFoundException {
         Employee employee = employeeRepository.findById(employeeId)
        .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
 
         employeeRepository.delete(employee);
-        Map<String, Object> response = new HashMap<>();
+        Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
-        response.put("check", "success");
-        
-        model.addAttribute("response", response);
-        
-        return "employee";
+        return response;
+    }
+    
+    @Autowired(required=true)
+    private MemberRepository memberRepository;
+    
+    @GetMapping("/member")
+    public List<Member> test() throws ResourceNotFoundException {
+		List<Member> response = memberRepository.findAll();
+		logger.info("response : " + response.toString());
+        return response;
+    }
+    
+    // HTTP Method: POST 
+    // Request URL: http://localhost:8080/rest/employees 
+    @PostMapping("/member")
+    public Member createMember(@Valid @RequestBody Member member) throws ResourceNotFoundException {
+    	logger.info("response : " + member.getEmail());
+        return memberRepository.save(member);
     }
 }

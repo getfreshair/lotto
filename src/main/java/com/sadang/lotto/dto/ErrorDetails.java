@@ -2,6 +2,8 @@ package com.sadang.lotto.dto;
 
 import java.util.Date;
 
+import lombok.Getter;
+
 public class ErrorDetails {
 	private Date timestamp;
     private String message;

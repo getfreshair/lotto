@@ -1,0 +1,1 @@
+insert into employees(first_name, last_name, email_address) values('yang', '동혁', 'thought@kakao.com')
