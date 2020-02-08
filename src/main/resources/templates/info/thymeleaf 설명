@@ -1,3 +1,5 @@
+gradle : implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect' /* thymeleaf layout 사용하려면 적용*/
+	  	 implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 th:replace : jsp의 include와 비슷한 동작
              Spring-boot의 기본 경로인 templates 하위에 정의한 경로를 작성 후 :: 뒤에는 아래에서 소개할 fragment속성의 이름
              ex) th:replace="fragments/header :: headerFragment
@@ -6,3 +8,7 @@ th:fragment : 속성을 적용한 태그부터 하위 모든 속성을 통틀어
 			  ex) <footer th:fragment="footerFragment">
 			     	<div style="border: 1px solid gold">footer</div>
 			  	  </footer>
+			  	  
+path : ex) @{/js/common/common.js}에서 @{} > src/main/resources/static이 생략
+       ex) layout:decorate 기본 경로 src/main/resources/templates 에서 뒤에 path 작성
+           layout:decorate(layout:decorator) > layout:decorate="layout/default_layout" 

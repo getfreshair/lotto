@@ -1,0 +1,19 @@
+.addPathPatterns("*") << 적용 경로
+.excludePathPatterns("/user/**"); << 제외 경로
+
+Ant 경로 패턴, 경로를 구분하는 특수문자
+? : 1개의 글자
+* : 0개 이상의 글자
+** : 0개 이상의 디렉터리
+
+ex)
+/test/?*.info
+ >> /test/로 시작하고 .info로 끝나는 모든 경로
+
+/test/member??.info
+ >> /test/member로 시작하고 두 개의 임의의 문자가 나온 후 .info로 끝나는 경로
+
+/test/**/info
+ >> /test/로 시작하고 중간에 0개 이상의 경로가 존재하며 /info로 끝나는 모든 경로
+
+다중 작성 : /test/math/info, /test/math/abs/info …
