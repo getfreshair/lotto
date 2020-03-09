@@ -36,7 +36,7 @@ public class RequestBodyXSSFileter implements Filter{
         try{
         	while(param.hasMoreElements()) {
         		header = param.nextElement();
-        		System.out.println("response header" + header + " :: " + request.getHeader(header));
+        		logger.info("response header" + header + " :: " + request.getHeader(header));
         	}
             requestWrapper = new RequestWrapper(request);
         }catch(Exception e){

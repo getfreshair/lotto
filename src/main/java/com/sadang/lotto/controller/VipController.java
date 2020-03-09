@@ -15,7 +15,7 @@ public class VipController {
 	@GetMapping("/vipMix")
     public ModelAndView root_test(ModelAndView mav) throws Exception{
 		mav.addObject("response", "test");
-		mav.setViewName("page/vipMix");
+		mav.setViewName("index");
         return mav;
     }
 }

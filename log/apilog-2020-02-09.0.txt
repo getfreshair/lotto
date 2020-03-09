@@ -1,0 +1,256 @@
+16:48:28.561-[32mINFO [0;39m-com.sadang.lotto.LottoApplication - Starting LottoApplication on Y with PID 21024 (C:\Users\1\git\lotto\bin\main started by 1 in C:\Users\1\git\lotto)
+16:48:28.563-[32mINFO [0;39m-com.sadang.lotto.LottoApplication - No active profile set, falling back to default profiles: default
+16:48:30.838-[32mINFO [0;39m-o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:48:30.914-[32mINFO [0;39m-o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75ms. Found 2 JPA repository interfaces.
+16:48:31.053-[32mWARN [0;39m-o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.sadang.lotto]' package. Please check your configuration.
+16:48:31.139-[32mINFO [0;39m-o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5233887d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:48:31.572-[32mINFO [0;39m-o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+16:48:31.574-[32mINFO [0;39m-o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:48:31.575-[32mINFO [0;39m-o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+16:48:31.576-[32mINFO [0;39m-o.a.c.core.AprLifecycleListener - An older version [1.2.19] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+16:48:31.576-[32mINFO [0;39m-o.a.c.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+16:48:31.577-[32mINFO [0;39m-o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+16:48:31.577-[32mINFO [0;39m-o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:48:31.577-[32mINFO [0;39m-o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+16:48:31.647-[32mINFO [0;39m-o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:48:31.648-[32mINFO [0;39m-o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3076 ms
+16:48:31.801-[32mINFO [0;39m-com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Starting...
+16:48:31.963-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection opened. {executed in 161ms} 
+16:48:31.964-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.new Connection returned 
+16:48:31.964-[32mINFO [0;39m-com.zaxxer.hikari.pool.PoolBase - HikariPool-12 - Driver does not support get/set network timeout for connections. (null)
+16:48:31.965-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.isReadOnly() returned false
+16:48:31.965-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.getAutoCommit() returned true
+16:48:31.966-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.isValid(1) returned true
+16:48:31.967-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.getTransactionIsolation() returned 2
+16:48:31.968-[32mINFO [0;39m-com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Start completed.
+16:48:31.969-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@3cfc672e
+16:48:31.969-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.clearWarnings() returned 
+16:48:32.003-[32mINFO [0;39m-o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:48:32.016-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@3feb852e
+16:48:32.017-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@3feb852e
+16:48:32.017-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@3feb852e
+16:48:32.017-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@13bef7cd
+16:48:32.018-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@7b487e47
+16:48:32.018-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@7297a05b
+16:48:32.018-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@23814080
+16:48:32.018-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@23814080
+16:48:32.019-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@23814080
+16:48:32.019-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@1704b093
+16:48:32.019-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@1704b093
+16:48:32.019-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1704b093
+16:48:32.019-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6c4f531
+16:48:32.019-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6c4f531
+16:48:32.019-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6c4f531
+16:48:32.020-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@7f66f6cf
+16:48:32.020-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@7f66f6cf
+16:48:32.020-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@7f66f6cf
+16:48:32.020-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@79bd46db
+16:48:32.020-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@79bd46db
+16:48:32.021-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@79bd46db
+16:48:32.021-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@23ce89d1
+16:48:32.021-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@23ce89d1
+16:48:32.022-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@23ce89d1
+16:48:32.022-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@4083ef0d
+16:48:32.022-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@4083ef0d
+16:48:32.022-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4083ef0d
+16:48:32.022-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@771b0dcb
+16:48:32.023-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@771b0dcb
+16:48:32.023-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@6ed352ba
+16:48:32.023-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@6ed352ba
+16:48:32.023-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@6bbfa094
+16:48:32.024-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@6bbfa094
+16:48:32.024-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@96dff58
+16:48:32.024-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6979d348
+16:48:32.024-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@369381a0
+16:48:32.025-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@369381a0
+16:48:32.025-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@11b259e6
+16:48:32.025-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@11b259e6
+16:48:32.026-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@5d72ec56
+16:48:32.026-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5d72ec56
+16:48:32.026-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@571e277f
+16:48:32.026-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@571e277f
+16:48:32.026-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@25db20ec
+16:48:32.026-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@25db20ec
+16:48:32.027-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@f3a0137
+16:48:32.027-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@f3a0137
+16:48:32.027-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5eab0c4
+16:48:32.027-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5eab0c4
+16:48:32.027-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@3ede3f88
+16:48:32.027-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@3ede3f88
+16:48:32.028-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3e992437
+16:48:32.028-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3e992437
+16:48:32.028-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@17fcc6aa
+16:48:32.028-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@17fcc6aa
+16:48:32.029-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@48f32aff
+16:48:32.030-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@48f32aff
+16:48:32.030-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@280b2ab8
+16:48:32.030-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@280b2ab8
+16:48:32.030-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@280b2ab8
+16:48:32.030-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@19d0a91b
+16:48:32.030-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@6ab1d8cd
+16:48:32.031-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6ab1d8cd
+16:48:32.031-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6ab1d8cd
+16:48:32.031-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1e740905
+16:48:32.031-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@533bb5df
+16:48:32.032-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@533bb5df
+16:48:32.032-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@2f6a07fc
+16:48:32.032-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2f6a07fc
+16:48:32.032-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1962050f
+16:48:32.032-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1962050f
+16:48:32.032-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@edaf37c
+16:48:32.032-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@edaf37c
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5ed30346
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5ed30346
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@35403785
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@627754a2
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@627754a2
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@627754a2
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7d2d72bb
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7d2d72bb
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7d2d72bb
+16:48:32.033-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@6745e5ec
+16:48:32.034-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@4799e138
+16:48:32.034-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@611741b1
+16:48:32.034-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@611741b1
+16:48:32.034-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@611741b1
+16:48:32.034-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@4db07af7
+16:48:32.034-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@4db07af7
+16:48:32.034-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@4db07af7
+16:48:32.035-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@1fe1c5c5
+16:48:32.035-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@38a67d8a
+16:48:32.035-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@3bf79817
+16:48:32.035-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3bf79817
+16:48:32.035-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@4a38814f
+16:48:32.035-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@62593583
+16:48:32.035-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@62593583
+16:48:32.035-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@3f44ae5e
+16:48:32.036-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@3f44ae5e
+16:48:32.036-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1bb0c1c0
+16:48:32.037-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@aaf860e
+16:48:32.037-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@75cb55d6
+16:48:32.037-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@16db3730
+16:48:32.037-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@16db3730
+16:48:32.038-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@764c2b16
+16:48:32.038-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6174506f
+16:48:32.038-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5736b9fa
+16:48:32.038-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3d27e47d
+16:48:32.038-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2a246c54
+16:48:32.038-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6990b657
+16:48:32.039-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@b8b2bf6
+16:48:32.039-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@98d32f6
+16:48:32.116-[32mINFO [0;39m-org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+16:48:32.117-[32mINFO [0;39m-o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+16:48:32.118-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@66826151
+16:48:32.118-[32mDEBUG[0;39m-org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@66826151
+16:48:32.118-[32mINFO [0;39m-org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5ed30346
+16:48:32.122-[32mDEBUG[0;39m-o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@c2a95f] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6c0c951e]
+16:48:32.188-[32mDEBUG[0;39m-o.h.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@c2a95f] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@1a3a4725]
+16:48:32.244-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.getAutoCommit() returned true
+16:48:32.245-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Statement.new Statement returned 
+16:48:32.245-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@4f37f369
+16:48:32.251-[32mINFO [0;39m-log4jdbc.log4j2 - 61. select relname from pg_class where relkind='S'  {executed in 6 ms}
+16:48:32.252-[32mINFO [0;39m-log4jdbc.log4j2 - 61. ResultSet.new ResultSet returned 
+16:48:32.252-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Statement.executeQuery(select relname from pg_class where relkind='S') returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7ab355d5
+16:48:32.252-[32mINFO [0;39m-log4jdbc.log4j2 - 61. ResultSet.next() returned true
+16:48:32.252-[32mINFO [0;39m-log4jdbc.log4j2 - 61. ResultSet.getString(1) returned employees_id_seq
+16:48:32.253-[32mINFO [0;39m-log4jdbc.log4j2 - 61. ResultSet.next() returned true
+16:48:32.253-[32mINFO [0;39m-log4jdbc.log4j2 - 61. ResultSet.getString(1) returned member_member_id_seq
+16:48:32.253-[32mINFO [0;39m-log4jdbc.log4j2 - 61. ResultSet.next() returned true
+16:48:32.253-[32mINFO [0;39m-log4jdbc.log4j2 - 61. ResultSet.getString(1) returned cities_id_seq
+16:48:32.254-[32mINFO [0;39m-log4jdbc.log4j2 - 
+|---------------------|
+|relname              |
+|---------------------|
+|employees_id_seq     |
+|member_member_id_seq |
+|cities_id_seq        |
+|---------------------|
+
+16:48:32.254-[32mINFO [0;39m-log4jdbc.log4j2 - 61. ResultSet.next() returned false
+16:48:32.254-[32mINFO [0;39m-log4jdbc.log4j2 - 61. ResultSet.close() returned void
+16:48:32.254-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Statement.close() returned 
+16:48:32.255-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@3cfc672e
+16:48:32.274-[32mINFO [0;39m-log4jdbc.log4j2 - 62. Connection opened. {executed in 204ms} 
+16:48:32.276-[32mINFO [0;39m-log4jdbc.log4j2 - 62. Connection.new Connection returned 
+16:48:32.276-[32mINFO [0;39m-log4jdbc.log4j2 - 62. Connection.isReadOnly() returned false
+16:48:32.276-[32mINFO [0;39m-log4jdbc.log4j2 - 62. Connection.getAutoCommit() returned true
+16:48:32.408-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.clearWarnings() returned 
+16:48:32.409-[32mTRACE[0;39m-o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@1a3a4725] for TypeConfiguration
+16:48:32.409-[32mINFO [0;39m-o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:48:32.453-[32mINFO [0;39m-log4jdbc.log4j2 - 63. Connection opened. {executed in 176ms} 
+16:48:32.453-[32mINFO [0;39m-log4jdbc.log4j2 - 63. Connection.new Connection returned 
+16:48:32.453-[32mINFO [0;39m-log4jdbc.log4j2 - 63. Connection.isReadOnly() returned false
+16:48:32.454-[32mINFO [0;39m-log4jdbc.log4j2 - 63. Connection.getAutoCommit() returned true
+16:48:32.461-[32mINFO [0;39m-o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:48:32.648-[32mINFO [0;39m-log4jdbc.log4j2 - 64. Connection opened. {executed in 193ms} 
+16:48:32.648-[32mINFO [0;39m-log4jdbc.log4j2 - 64. Connection.new Connection returned 
+16:48:32.648-[32mINFO [0;39m-log4jdbc.log4j2 - 64. Connection.isReadOnly() returned false
+16:48:32.648-[32mINFO [0;39m-log4jdbc.log4j2 - 64. Connection.getAutoCommit() returned true
+16:48:32.829-[32mINFO [0;39m-log4jdbc.log4j2 - 65. Connection opened. {executed in 181ms} 
+16:48:32.830-[32mINFO [0;39m-log4jdbc.log4j2 - 65. Connection.new Connection returned 
+16:48:32.830-[32mINFO [0;39m-log4jdbc.log4j2 - 65. Connection.isReadOnly() returned false
+16:48:32.830-[32mINFO [0;39m-log4jdbc.log4j2 - 65. Connection.getAutoCommit() returned true
+16:48:32.916-[32mINFO [0;39m-o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:48:32.944-[32mWARN [0;39m-o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:48:33.013-[32mINFO [0;39m-log4jdbc.log4j2 - 66. Connection opened. {executed in 183ms} 
+16:48:33.013-[32mINFO [0;39m-log4jdbc.log4j2 - 66. Connection.new Connection returned 
+16:48:33.013-[32mINFO [0;39m-log4jdbc.log4j2 - 66. Connection.isReadOnly() returned false
+16:48:33.013-[32mINFO [0;39m-log4jdbc.log4j2 - 66. Connection.getAutoCommit() returned true
+16:48:33.226-[32mINFO [0;39m-log4jdbc.log4j2 - 67. Connection opened. {executed in 212ms} 
+16:48:33.226-[32mINFO [0;39m-log4jdbc.log4j2 - 67. Connection.new Connection returned 
+16:48:33.227-[32mINFO [0;39m-log4jdbc.log4j2 - 67. Connection.isReadOnly() returned false
+16:48:33.227-[32mINFO [0;39m-log4jdbc.log4j2 - 67. Connection.getAutoCommit() returned true
+16:48:33.412-[32mINFO [0;39m-log4jdbc.log4j2 - 68. Connection opened. {executed in 184ms} 
+16:48:33.412-[32mINFO [0;39m-log4jdbc.log4j2 - 68. Connection.new Connection returned 
+16:48:33.412-[32mINFO [0;39m-log4jdbc.log4j2 - 68. Connection.isReadOnly() returned false
+16:48:33.412-[32mINFO [0;39m-log4jdbc.log4j2 - 68. Connection.getAutoCommit() returned true
+16:48:33.440-[32mINFO [0;39m-o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+16:48:33.443-[32mINFO [0;39m-com.sadang.lotto.LottoApplication - Started LottoApplication in 5.345 seconds (JVM running for 6002.953)
+16:48:33.450-[32mINFO [0;39m-o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:48:33.583-[32mINFO [0;39m-log4jdbc.log4j2 - 69. Connection opened. {executed in 171ms} 
+16:48:33.583-[32mINFO [0;39m-log4jdbc.log4j2 - 69. Connection.new Connection returned 
+16:48:33.584-[32mINFO [0;39m-log4jdbc.log4j2 - 69. Connection.isReadOnly() returned false
+16:48:33.584-[32mINFO [0;39m-log4jdbc.log4j2 - 69. Connection.getAutoCommit() returned true
+16:48:33.766-[32mINFO [0;39m-log4jdbc.log4j2 - 70. Connection opened. {executed in 182ms} 
+16:48:33.767-[32mINFO [0;39m-log4jdbc.log4j2 - 70. Connection.new Connection returned 
+16:48:33.767-[32mINFO [0;39m-log4jdbc.log4j2 - 70. Connection.isReadOnly() returned false
+16:48:33.767-[32mINFO [0;39m-log4jdbc.log4j2 - 70. Connection.getAutoCommit() returned true
+16:49:43.232-[32mINFO [0;39m-o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:49:43.240-[32mINFO [0;39m-o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:49:43.241-[32mINFO [0;39m-o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:49:43.243-[32mTRACE[0;39m-o.h.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@1a3a4725] for TypeConfiguration
+16:49:43.244-[32mDEBUG[0;39m-o.h.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@2c77b015] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@1a3a4725]
+16:49:43.247-[32mINFO [0;39m-com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown initiated...
+16:49:43.251-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.isClosed() returned false
+16:49:43.258-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection closed. {executed in 5ms} 
+16:49:43.258-[32mINFO [0;39m-log4jdbc.log4j2 - 61. Connection.close() returned 
+16:49:43.259-[32mINFO [0;39m-log4jdbc.log4j2 - 62. Connection.isClosed() returned false
+16:49:43.263-[32mINFO [0;39m-log4jdbc.log4j2 - 62. Connection closed. {executed in 4ms} 
+16:49:43.263-[32mINFO [0;39m-log4jdbc.log4j2 - 62. Connection.close() returned 
+16:49:43.263-[32mINFO [0;39m-log4jdbc.log4j2 - 63. Connection.isClosed() returned false
+16:49:43.265-[32mINFO [0;39m-log4jdbc.log4j2 - 63. Connection closed. {executed in 1ms} 
+16:49:43.265-[32mINFO [0;39m-log4jdbc.log4j2 - 63. Connection.close() returned 
+16:49:43.266-[32mINFO [0;39m-log4jdbc.log4j2 - 64. Connection.isClosed() returned false
+16:49:43.267-[32mINFO [0;39m-log4jdbc.log4j2 - 64. Connection closed. {executed in 1ms} 
+16:49:43.267-[32mINFO [0;39m-log4jdbc.log4j2 - 64. Connection.close() returned 
+16:49:43.268-[32mINFO [0;39m-log4jdbc.log4j2 - 65. Connection.isClosed() returned false
+16:49:43.269-[32mINFO [0;39m-log4jdbc.log4j2 - 65. Connection closed. {executed in 1ms} 
+16:49:43.269-[32mINFO [0;39m-log4jdbc.log4j2 - 65. Connection.close() returned 
+16:49:43.270-[32mINFO [0;39m-log4jdbc.log4j2 - 66. Connection.isClosed() returned false
+16:49:43.271-[32mINFO [0;39m-log4jdbc.log4j2 - 66. Connection closed. {executed in 1ms} 
+16:49:43.271-[32mINFO [0;39m-log4jdbc.log4j2 - 66. Connection.close() returned 
+16:49:43.272-[32mINFO [0;39m-log4jdbc.log4j2 - 67. Connection.isClosed() returned false
+16:49:43.273-[32mINFO [0;39m-log4jdbc.log4j2 - 67. Connection closed. {executed in 1ms} 
+16:49:43.273-[32mINFO [0;39m-log4jdbc.log4j2 - 67. Connection.close() returned 
+16:49:43.274-[32mINFO [0;39m-log4jdbc.log4j2 - 68. Connection.isClosed() returned false
+16:49:43.275-[32mINFO [0;39m-log4jdbc.log4j2 - 68. Connection closed. {executed in 1ms} 
+16:49:43.276-[32mINFO [0;39m-log4jdbc.log4j2 - 68. Connection.close() returned 
+16:49:43.276-[32mINFO [0;39m-log4jdbc.log4j2 - 69. Connection.isClosed() returned false
+16:49:43.277-[32mINFO [0;39m-log4jdbc.log4j2 - 69. Connection closed. {executed in 1ms} 
+16:49:43.277-[32mINFO [0;39m-log4jdbc.log4j2 - 69. Connection.close() returned 
+16:49:43.278-[32mINFO [0;39m-log4jdbc.log4j2 - 70. Connection.isClosed() returned false
+16:49:43.279-[32mINFO [0;39m-log4jdbc.log4j2 - 70. Connection closed. {executed in 1ms} 
+16:49:43.279-[32mINFO [0;39m-log4jdbc.log4j2 - 70. Connection.close() returned 
+16:49:43.280-[32mINFO [0;39m-com.zaxxer.hikari.HikariDataSource - HikariPool-12 - Shutdown completed.

@@ -16,6 +16,9 @@ configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
+	all {
+    	exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    }
 }
 
 repositories {
@@ -25,8 +28,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect' /* thymeleaf layout*/
+	//implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	//implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect' /* thymeleaf layout*/
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	compileOnly 'org.projectlombok:lombok'
@@ -38,5 +41,6 @@ dependencies {
 	compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.7.0'
 	compile group: 'com.navercorp.lucy', name: 'lucy-xss-servlet', version: '2.0.0'
 	compile group: 'org.apache.commons', name: 'commons-text', version: '1.6'
-	
+	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+	compile('javax.servlet:jstl')
 }

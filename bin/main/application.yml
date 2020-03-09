@@ -3,10 +3,12 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/sqllotto
+    url: jdbc:log4jdbc:postgresql://localhost:5432/sqllotto
     username: lotto
     password: sadang
-    driver-class-name: org.postgresql.Driver
+   #driver-class-name: org.postgresql.Driver
+   #log4j2 사용을 위해서 class-name 아래로 변경
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     sql-script-encoding: UTF-8 #data.sql에서 인코딩 설정
     platform : postgresql
     initialization-mode: never #spring.datasource.initialization-mode를 alwasy로 설정해야 외장 DB 초기화 가능
@@ -33,14 +35,18 @@ spring:
         dialect : org.hibernate.dialect.PostgreSQLDialect
         temp : 
           use_jdbc_metadata_defaults: false
-  thymeleaf:
-    cache: false
-    check-template: true
-    check-template-location: true
-    enabled: true
-    encoding: UTF-8
-    prefix: classpath:/templates/ # prefix의 기본 경로가 classpath:/templates/
-    suffix: .html # suffix의 기본 설정이 .html
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  #thymeleaf:
+    #cache: false
+    #check-template: true
+    #check-template-location: true
+    #enabled: true
+    #encoding: UTF-8
+    #prefix: classpath:/templates/ # prefix의 기본 경로가 classpath:/templates/
+    #suffix: .html # suffix의 기본 설정이 .html
 
 logging:
   level:
